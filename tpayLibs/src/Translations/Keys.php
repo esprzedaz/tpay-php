@@ -10,8 +10,15 @@ namespace tpayLibs\src\Translations;
 
 use tpayLibs\src\_class_tpay\Utilities\TException;
 
+include('Spanish.php');
+include('France.php');
+include('Germany.php');
+include('Italy.php');
+include('Sweden.php');
+
+
 class Keys
-{
+{ 
     protected $translations;
 
     private $keys = [
@@ -64,11 +71,11 @@ class Keys
         $this->translations = [
             'pl' => (new Polish())->translations,
             'en' => (new English())->translations,
-            'de' => (new Germany())->translations,
             'es' => (new Spanish())->translations,
             'it' => (new Italy())->translations,
             'se' => (new Sweden())->translations,
             'fr' => (new France())->translations,
+            'de' => (new Germany())->translations,
         ];
         $this->checkKeysTranslations();
     }
@@ -83,6 +90,7 @@ class Keys
                 }
             }
         }
+
         foreach ($this->translations as $key => $value) {
             foreach ($value as $item => $item2) {
                 if (!in_array($item, $this->keys)) {
