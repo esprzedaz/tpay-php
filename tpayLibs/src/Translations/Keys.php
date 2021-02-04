@@ -64,6 +64,11 @@ class Keys
         $this->translations = [
             'pl' => (new Polish())->translations,
             'en' => (new English())->translations,
+            'de' => (new Germany())->translations,
+            'es' => (new Spanish())->translations,
+            'it' => (new Italy())->translations,
+            'se' => (new Sweden())->translations,
+            'fr' => (new France())->translations,
         ];
         $this->checkKeysTranslations();
     }
