@@ -37,7 +37,7 @@ class France
         'accept' => 'J`accepte',
         'regulations_url' => 'le règlement',
         'regulations' => 'du service Tpay',
-        'acceptation_is_required' => 'L`acceptation du règlement est obligatoire, avant de commencer le paiement',
+        'acceptance_is_required' => 'L`acceptation du règlement est obligatoire, avant de commencer le paiement',
 
         // CARD
 
